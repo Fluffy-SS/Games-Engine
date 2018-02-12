@@ -1,4 +1,5 @@
 #include "Errors.h"
+#include <cstdlib>
 #include <iostream>
 #include <SDL\SDL.h>
 

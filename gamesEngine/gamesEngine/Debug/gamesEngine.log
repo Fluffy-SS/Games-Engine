@@ -1,11 +1,7 @@
-﻿  MainGame.cpp
-  GLSLProgram.cpp
-  Errors.cpp
-  Generating Code...
-  Compiling...
-  main.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  Sprite.cpp
+﻿  Sprite.cpp
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\sprite.cpp(20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\sprite.cpp(21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\sprite.cpp(22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\sprite.cpp(23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   gamesEngine.vcxproj -> C:\Users\Sean Spalding\Documents\Visual Studio 2015\Projects\Games-Engine\gamesEngine\Debug\gamesEngine.exe
   gamesEngine.vcxproj -> C:\Users\Sean Spalding\Documents\Visual Studio 2015\Projects\Games-Engine\gamesEngine\Debug\gamesEngine.pdb (Partial PDB)
