@@ -1,13 +1,18 @@
 #pragma once
 #include <GL\glew.h>
 
-struct Vertex {
-	struct Position {
-		float x, y;
-	}position;
+struct Position {
+	float x, y;
+};
 
-	struct Color {
-		GLubyte r, g, b, a; 
-	}color;
+//4 bytes for RGBA color
+struct Color {
+	GLubyte r, g, b, a;
+};
+
+struct Vertex {
+	Position position; 
+
+	Color color;
 
 };

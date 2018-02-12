@@ -1,7 +1,8 @@
-﻿  Sprite.cpp
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\sprite.cpp(20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\sprite.cpp(21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\sprite.cpp(22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\sprite.cpp(23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  gamesEngine.vcxproj -> C:\Users\Sean Spalding\Documents\Visual Studio 2015\Projects\Games-Engine\gamesEngine\Debug\gamesEngine.exe
-  gamesEngine.vcxproj -> C:\Users\Sean Spalding\Documents\Visual Studio 2015\Projects\Games-Engine\gamesEngine\Debug\gamesEngine.pdb (Partial PDB)
+﻿  picoPNG.cpp
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\picopng.cpp(570): error C2660: 'decodePNG': function does not take 5 arguments
+  IOManager.cpp
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\iomanager.cpp(17): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\iomanager.cpp(23): warning C4244: '-=': conversion from 'std::streamoff' to 'int', possible loss of data
+  ImageLoader.cpp
+  Generating Code...
+cl : Command line warning D9028: minimal rebuild failure, reverting to normal build

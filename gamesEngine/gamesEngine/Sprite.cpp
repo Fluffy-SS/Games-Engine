@@ -48,20 +48,20 @@ void Sprite::init(float x, float y, float width, float height) {
 	vertexData[5].position.y = y + height;
 
 	for (int i = 0; i < 6; i++) {
-		vertexData[i].color.r = 255;
-		vertexData[i].color.g = 0;
-		vertexData[i].color.b = 255; 
+		vertexData[i].color.r = 200;
+		vertexData[i].color.g = 100;
+		vertexData[i].color.b = 240; 
 		vertexData[i].color.a = 255;
 	}
 
-	vertexData[1].color.r = 0 ;
-	vertexData[1].color.g = 0;
-	vertexData[1].color.b = 255;
-	vertexData[1].color.a = 255;
+	vertexData[1].color.r = 237;
+	vertexData[1].color.g = 119;
+	vertexData[1].color.b = 202;
+	vertexData[1].color.a = 150;
 
-	vertexData[4].color.r = 0;
-	vertexData[4].color.g = 255;
-	vertexData[4].color.b = 0;
+	vertexData[4].color.r = 245;
+	vertexData[4].color.g = 20;
+	vertexData[4].color.b = 121;
 	vertexData[4].color.a = 255;
 
 	glBindBuffer(GL_ARRAY_BUFFER, _vboID);

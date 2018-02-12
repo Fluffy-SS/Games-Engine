@@ -3,13 +3,7 @@
 #include "Errors.h" 
 #include <string>
 
-MainGame::MainGame()
-{
-	_window = nullptr;
-	_screenWidth = 1024;
-	_screenHeight = 768;
-	_gameState = GameState::PLAY;	 
-}
+MainGame::MainGame() : _window (nullptr), _screenWidth (1024), _screenHeight (768), _gameState (GameState::PLAY), _time(0.0f) {}
 
 
 MainGame::~MainGame()
@@ -64,6 +58,7 @@ void MainGame::initShaders() {
 void MainGame::gameLoop() {
 	while (_gameState != GameState::EXIT) {
 		processInput();
+		_time += 0.005;
 		drawGame();
 	 }
 }
@@ -92,6 +87,9 @@ void MainGame::drawGame(){
 
 	_colorProgram.use();
 	 
+	GLuint timeLocation = _colorProgram.getUniformLocation("time");
+	glUniform1f(timeLocation, _time);
+
 	//Draw our sprite
 	_sprite.draw();
 
