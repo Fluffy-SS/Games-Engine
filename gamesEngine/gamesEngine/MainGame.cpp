@@ -1,16 +1,8 @@
 #include "MainGame.h"
 #include <iostream>
+#include "Errors.h" 
 #include <string>
 
-
-void fatalError(std::string errorString) {
-	std::cout << errorString << std::endl;
-	std::cout << "Enter any key to quit...";
-	int tmp;
-	std::cin >> tmp;
-	SDL_QUIT;
-	exit(1); 
-}
 MainGame::MainGame()
 {
 	_window = nullptr;
@@ -26,6 +18,9 @@ MainGame::~MainGame()
  
 void MainGame::run() {
 	initSystems();
+
+	_sprite.init(-1.0f, -1.0f, 1.0f, 1.0f);
+
 	gameLoop();
 
 }
@@ -53,14 +48,23 @@ void MainGame::initSystems() {
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
 	glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
-	 
+
+	initShaders();
 
 }
+
+void MainGame::initShaders() {
+	_colorProgram.compileShaders("Shaders/colorShading.vert","Shaders/colorShading.frag");
+	_colorProgram.addAttribute("vertexPosition");
+	_colorProgram.linkShaders();
+}
+
+
 void MainGame::gameLoop() {
 	while (_gameState != GameState::EXIT) {
 		processInput();
 		drawGame();
-	}
+	 }
 }
 
 void MainGame::processInput(){
@@ -80,18 +84,19 @@ void MainGame::processInput(){
 }
 
 void MainGame::drawGame(){
+	//Set the base depth to 1.0
 	glClearDepth(1.0);
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	//Clear the color and depth buffer	
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	
 
-	glEnableClientState(GL_COLOR_ARRAY);
+	_colorProgram.use();
+	 
+	//Draw our sprite
+	_sprite.draw();
 
-	glBegin(GL_TRIANGLES);
-	glColor3f(1.0f, 0.0f, 0.0f);
-	glVertex2f(0, 0);
-	glVertex2f(0, 500);
-	glVertex2f(500, 500);
-	glEnd();
+	_colorProgram.unuse();
 
+	//Swap our buffers and draw everything to the screen
 	SDL_GL_SwapWindow(_window);
 
 }

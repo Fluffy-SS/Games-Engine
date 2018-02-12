@@ -1,3 +1,11 @@
 ﻿  MainGame.cpp
+  GLSLProgram.cpp
+  Errors.cpp
+  Generating Code...
+  Compiling...
+  main.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Sprite.cpp
   gamesEngine.vcxproj -> C:\Users\Sean Spalding\Documents\Visual Studio 2015\Projects\Games-Engine\gamesEngine\Debug\gamesEngine.exe
   gamesEngine.vcxproj -> C:\Users\Sean Spalding\Documents\Visual Studio 2015\Projects\Games-Engine\gamesEngine\Debug\gamesEngine.pdb (Partial PDB)
