@@ -13,7 +13,7 @@ GLTexture ImageLoader::loadPNG(std::string filePath) {
 	unsigned long width, height;
 
 	if (IOManager::readFileToBuffer(filePath, in) == false) {
-		fatalError("Failes to load PNG file to buffer!");
+		fatalError("Failed to load PNG file to buffer!");
 	}
 
 	int errorCode = decodePNG(out, width, height, &(in[0]), in.size());	
@@ -35,6 +35,9 @@ GLTexture ImageLoader::loadPNG(std::string filePath) {
 	glGenerateMipmap(GL_TEXTURE_2D);
 
 	glBindTexture(GL_TEXTURE_2D, 0);
+
+	texture.width = width;
+	texture.height = height; 
 
 	return texture;
 }
