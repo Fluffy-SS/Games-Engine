@@ -9,6 +9,8 @@
 
 #include "GLTexture.h"
 
+#include<vector>
+
 
 enum class GameState {PLAY, EXIT};
 
@@ -26,16 +28,17 @@ private:
 	void gameLoop();
 	void processInput();
 	void drawGame();
+	void calculateFPS();
 		
 	SDL_Window* _window;
 	int _screenWidth, _screenHeight;
 	GameState _gameState;
 
-	Sprite _sprite;
+	std::vector<Sprite*> _sprites;
 
 	GLSLProgram _colorProgram;
 
-	GLTexture _playerTexture;
+	float _fps, _frameTime, _maxFPS;
 
 	float _time;
 	
