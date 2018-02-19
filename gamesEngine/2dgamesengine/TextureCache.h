@@ -1,7 +1,7 @@
 #pragma once
 #include<map>
 #include"GLTexture.h"
-
+namespace gamesengine2d {
 class TextureCache
 {
 public:
@@ -13,4 +13,5 @@ public:
 private:
 	std::map<std::string, GLTexture> _textureMap;
 };
+}
 

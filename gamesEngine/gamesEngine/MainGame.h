@@ -2,12 +2,14 @@
 
 #include <SDL\SDL.h>
 #include <GL\glew.h>
+#include <2dgamesengine/2dgamesengine.h>
+#include <2dgamesengine\GLSLProgram.h>
 
-#include "GLSLProgram.h"
+#include <2dgamesengine\Sprite.h>
 
-#include "Sprite.h"
+#include <2dgamesengine\GLTexture.h>
 
-#include "GLTexture.h"
+#include <2dgamesengine\Window.h>
 
 #include<vector>
 
@@ -30,13 +32,13 @@ private:
 	void drawGame();
 	void calculateFPS();
 		
-	SDL_Window* _window;
+	gamesengine2d::Window _window;
 	int _screenWidth, _screenHeight;
 	GameState _gameState;
 
-	std::vector<Sprite*> _sprites;
+	std::vector<gamesengine2d::Sprite*> _sprites;
 
-	GLSLProgram _colorProgram;
+	gamesengine2d::GLSLProgram _colorProgram;
 
 	float _fps, _frameTime, _maxFPS;
 

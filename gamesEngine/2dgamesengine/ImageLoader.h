@@ -1,10 +1,11 @@
 #pragma once
 #include "GLTexture.h"
 #include <string>
-
+namespace gamesengine2d {
 class ImageLoader
 {
 public:
 	static GLTexture loadPNG(std::string filePath);
 };
+}
 

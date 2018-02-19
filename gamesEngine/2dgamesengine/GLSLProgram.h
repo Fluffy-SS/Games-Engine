@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <GL\glew.h>
+namespace gamesengine2d {
 class GLSLProgram
 {
 public:
@@ -29,4 +30,4 @@ private:
 	GLuint _fragmentShaderID;
 
 };
-
+}

@@ -1,6 +1,6 @@
 #pragma once
 #include <GL\glew.h>
-
+namespace gamesengine2d {
 struct Position {
 	float x, y;
 };
@@ -16,7 +16,7 @@ struct UV {
 };
 
 struct Vertex {
-	Position position; 
+	Position position;
 
 	Color color;
 
@@ -39,3 +39,4 @@ struct Vertex {
 		position.y = y;
 	}
 };
+}

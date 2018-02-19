@@ -1,9 +1,9 @@
 ﻿  MainGame.cpp
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(72): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(75): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(91): warning C4244: 'argument': conversion from 'float' to 'Uint32', possible loss of data
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(130): warning C4018: '<': signed/unsigned mismatch
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(148): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
-c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(149): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(49): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(52): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(68): warning C4244: 'argument': conversion from 'float' to 'Uint32', possible loss of data
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(107): warning C4018: '<': signed/unsigned mismatch
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(125): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\sean spalding\documents\visual studio 2015\projects\games-engine\gamesengine\gamesengine\maingame.cpp(126): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
   gamesEngine.vcxproj -> C:\Users\Sean Spalding\Documents\Visual Studio 2015\Projects\Games-Engine\gamesEngine\Debug\gamesEngine.exe
   gamesEngine.vcxproj -> C:\Users\Sean Spalding\Documents\Visual Studio 2015\Projects\Games-Engine\gamesEngine\Debug\gamesEngine.pdb (Partial PDB)

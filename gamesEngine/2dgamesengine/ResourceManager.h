@@ -1,7 +1,7 @@
 #pragma once
 #include"TextureCache.h"
 #include <string>
-
+namespace gamesengine2d {
 class ResourceManager
 {
 public:
@@ -11,4 +11,5 @@ private:
 	static TextureCache _textureCache;
 
 };
+}
 

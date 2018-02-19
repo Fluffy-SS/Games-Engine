@@ -1,5 +1,5 @@
 #include <vector>
-
+namespace gamesengine2d {
 	/*
 	decodePNG: The picoPNG function, decodes a PNG file buffer in memory, into a raw pixel buffer.
 	out_image: output parameter, this will contain the raw pixels after decoding.
@@ -531,3 +531,4 @@
 		image_width = decoder.info.width; image_height = decoder.info.height;
 		return decoder.error;
 	}
+}
