@@ -2,9 +2,9 @@
 
 #include <SDL\SDL.h>
 #include <GL\glew.h>
-#include <2dgamesengine/2dgamesengine.h>
+#include <2dgamesengine\2dgamesengine.h>
 #include <2dgamesengine\GLSLProgram.h>
-
+#include <2dgamesengine\Camera2D.h>
 #include <2dgamesengine\Sprite.h>
 
 #include <2dgamesengine\GLTexture.h>
@@ -39,6 +39,7 @@ private:
 	std::vector<gamesengine2d::Sprite*> _sprites;
 
 	gamesengine2d::GLSLProgram _colorProgram;
+	gamesengine2d::Camera2D _camera;
 
 	float _fps, _frameTime, _maxFPS;
 
